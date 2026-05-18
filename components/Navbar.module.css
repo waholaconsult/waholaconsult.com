@@ -1,0 +1,71 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 20px 0;
+  transition: all 0.3s ease;
+}
+
+.scrolled {
+  background: var(--bg-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-color);
+  padding: 15px 0;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: var(--gradient-primary);
+  transition: width 0.3s ease;
+}
+
+.link:hover {
+  color: var(--text-primary);
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none; /* simple mobile hide for now, can be expanded to hamburger menu */
+  }
+}
