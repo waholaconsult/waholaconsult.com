@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -9,7 +10,7 @@ export default function Footer() {
         <div className={styles.topSection}>
           <div className={styles.brand}>
             <Link href="/" className={styles.logo}>
-              wahola
+              <Image src="/waholaconsult.JPG" alt="Wahola Consult Logo" width={63} height={50} style={{ borderRadius: "4px" }} />
             </Link>
             <span className={styles.lang}>EN</span>
           </div>

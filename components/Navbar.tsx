@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
@@ -20,7 +21,7 @@ export default function Navbar() {
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
       <div className={`container ${styles.navContainer}`}>
         <Link href="/" className={styles.logo}>
-          wahola<span className={styles.orangeDot}>.</span>
+          <Image src="/waholaconsult.JPG" alt="Wahola Consult Logo" width={50} height={40} priority style={{ borderRadius: "4px" }} />
         </Link>
         <div className={styles.navLinks}>
           <Link href="/" className={styles.link}>Home</Link>
