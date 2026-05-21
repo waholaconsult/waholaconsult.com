@@ -14,8 +14,8 @@
   --border-color: #e5e7eb;
   --border-color-dark: rgba(255, 255, 255, 0.15);
   
-  --font-main: var(--font-outfit), sans-serif;
-  --font-heading: var(--font-outfit), sans-serif;
+  --font-main: var(--font-figtree), sans-serif;
+  --font-heading: var(--font-figtree), sans-serif;
 }
 
 * {
