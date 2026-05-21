@@ -1,8 +1,8 @@
 :root {
   --bg-primary: #ffffff;
   --bg-secondary: #f9fafb;
-  --bg-orange: #f05123;
-  --bg-orange-dark: #d84315;
+  --bg-orange: #004AAD;
+  --bg-orange-dark: #003580;
   --bg-blue: #0056b3;
   --bg-blue-dark: #004085;
   
@@ -122,14 +122,14 @@ h3 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
   justify-content: center;
   gap: 8px;
   border: 2px solid var(--bg-orange);
-  box-shadow: 0 4px 14px rgba(240, 81, 35, 0.2);
+  box-shadow: 0 4px 14px rgba(0, 74, 173, 0.2);
 }
 
 .btn-primary:hover {
   background-color: var(--bg-orange-dark);
   border-color: var(--bg-orange-dark);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(240, 81, 35, 0.3);
+  box-shadow: 0 6px 20px rgba(0, 74, 173, 0.3);
 }
 
 .btn-outline {
@@ -383,7 +383,7 @@ input, textarea {
 input:focus, textarea:focus {
   outline: none;
   border-color: var(--bg-orange);
-  box-shadow: 0 0 0 3px rgba(240, 81, 35, 0.1);
+  box-shadow: 0 0 0 3px rgba(0, 74, 173, 0.1);
 }
 
 @media (max-width: 992px) {

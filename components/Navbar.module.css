@@ -66,7 +66,7 @@
 
 .ctaBtn:hover {
   border-color: var(--bg-orange);
-  background: rgba(240, 81, 35, 0.05);
+  background: rgba(0, 74, 173, 0.05);
 }
 
 @media (max-width: 768px) {

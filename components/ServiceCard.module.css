@@ -22,13 +22,13 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: rgba(240, 81, 35, 0.06);
+  background: rgba(0, 74, 173, 0.06);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 28px;
   color: var(--bg-orange);
-  border: 1px solid rgba(240, 81, 35, 0.1);
+  border: 1px solid rgba(0, 74, 173, 0.1);
 }
 
 .title {
