@@ -10,7 +10,7 @@ export default function Footer() {
         <div className={styles.topSection}>
           <div className={styles.brand}>
             <Link href="/" className={styles.logo}>
-              <Image src="/waholaconsult.JPG" alt="Wahola Consult Logo" width={63} height={50} style={{ borderRadius: "4px" }} />
+              <Image src="/waholaconsult.png" alt="Wahola Consult Logo" width={63} height={50} style={{ borderRadius: "4px" }} />
             </Link>
             <span className={styles.lang}>EN</span>
           </div>

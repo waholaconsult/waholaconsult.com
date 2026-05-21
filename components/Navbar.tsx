@@ -21,7 +21,7 @@ export default function Navbar() {
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
       <div className={`container ${styles.navContainer}`}>
         <Link href="/" className={styles.logo}>
-          <Image src="/waholaconsult.JPG" alt="Wahola Consult Logo" width={50} height={40} priority style={{ borderRadius: "4px" }} />
+          <Image src="/waholaconsult.png" alt="Wahola Consult Logo" width={50} height={40} priority style={{ borderRadius: "4px" }} />
         </Link>
         <div className={styles.navLinks}>
           <Link href="/" className={styles.link}>Home</Link>
