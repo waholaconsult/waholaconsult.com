@@ -3,54 +3,44 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  transition: all 0.4s ease;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
-}
-
-.card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle at top right, rgba(0,242,254,0.1), transparent 50%);
-  opacity: 0;
-  transition: opacity 0.4s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  border-color: rgba(0, 242, 254, 0.3);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.card:hover::before {
-  opacity: 1;
+  transform: translateY(-6px);
+  border-color: var(--bg-orange);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.06), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
 }
 
 .iconWrapper {
   width: 60px;
   height: 60px;
-  border-radius: 12px;
-  background: rgba(0, 242, 254, 0.1);
+  border-radius: 50%;
+  background: rgba(240, 81, 35, 0.06);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
-  color: var(--accent-primary);
-  border: 1px solid rgba(0, 242, 254, 0.2);
+  font-size: 28px;
+  color: var(--bg-orange);
+  border: 1px solid rgba(240, 81, 35, 0.1);
 }
 
 .title {
   font-size: 1.5rem;
+  font-weight: 700;
   color: var(--text-primary);
 }
 
 .description {
   color: var(--text-secondary);
   line-height: 1.6;
+  font-size: 0.95rem;
   flex-grow: 1;
 }
 
@@ -58,15 +48,21 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: var(--accent-primary);
-  font-weight: 600;
+  color: var(--bg-orange);
+  font-weight: 700;
+  font-size: 0.95rem;
   margin-top: 10px;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--bg-orange-dark);
 }
 
 .arrow {
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
 }
 
 .link:hover .arrow {
-  transform: translateX(5px);
+  transform: translateX(4px);
 }

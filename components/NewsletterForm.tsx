@@ -11,15 +11,14 @@ export default function NewsletterForm() {
     e.preventDefault();
     setStatus("loading");
     
-    // Placeholder for actual email marketing integration (e.g., Mailchimp, ConvertKit)
     setTimeout(() => {
       setStatus("success");
       setEmail("");
-    }, 1500);
+    }, 1200);
   };
 
   return (
-    <div className={`glass-panel ${styles.wrapper}`}>
+    <div className={styles.wrapper}>
       <div className={styles.content}>
         <h3>Join Our Newsletter</h3>
         <p>Get exclusive digital marketing tips and strategies sent straight to your inbox.</p>

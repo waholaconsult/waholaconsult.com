@@ -1,4 +1,3 @@
-import ServiceCard from "@/components/ServiceCard";
 import Link from "next/link";
 
 export default function ServicesPage() {
@@ -34,35 +33,42 @@ export default function ServicesPage() {
   ];
 
   return (
-    <div style={{ paddingTop: "120px", paddingBottom: "100px" }}>
+    <div style={{ paddingTop: "140px", paddingBottom: "100px", backgroundColor: "var(--bg-secondary)" }}>
       <div className="container">
+        {/* Section Header */}
         <div style={{ textAlign: "center", marginBottom: "80px", maxWidth: "800px", margin: "0 auto 80px" }}>
-          <div className="text-gradient" style={{ fontWeight: 600, marginBottom: "16px", textTransform: "uppercase", letterSpacing: "2px" }}>Our Expertise</div>
-          <h1 style={{ marginBottom: "24px" }}>Premium Digital Services</h1>
+          <div style={{ color: "var(--bg-orange)", fontWeight: 700, fontSize: "0.95rem", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: "16px" }}>
+            Our Expertise
+          </div>
+          <h1 style={{ marginBottom: "24px", color: "var(--text-primary)" }}>Premium Digital Services</h1>
           <p style={{ color: "var(--text-secondary)", fontSize: "1.2rem", lineHeight: "1.6" }}>
             We provide end-to-end digital solutions designed to scale your business, increase your revenue, and dominate your industry.
           </p>
         </div>
 
+        {/* Detailed Services Column */}
         <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "40px" }}>
           {services.map((service, idx) => (
             <div 
               key={service.id} 
               id={service.id}
-              className="glass-panel" 
               style={{ 
                 padding: "60px", 
+                backgroundColor: "var(--bg-primary)",
+                border: "1px solid var(--border-color)",
+                borderRadius: "8px",
+                boxShadow: "0 10px 30px rgba(0, 0, 0, 0.02)",
                 display: "flex", 
                 gap: "40px", 
                 alignItems: "center",
                 flexDirection: idx % 2 === 1 ? "row-reverse" : "row"
               }}
             >
-              <div style={{ flex: "1", fontSize: "100px", textAlign: "center" }}>
+              <div style={{ flex: "1", fontSize: "100px", textAlign: "center", userSelect: "none" }}>
                 {service.icon}
               </div>
               <div style={{ flex: "2" }}>
-                <h2 style={{ marginBottom: "20px" }}>{service.title}</h2>
+                <h2 style={{ marginBottom: "20px", color: "var(--text-primary)", fontSize: "2rem" }}>{service.title}</h2>
                 <p style={{ color: "var(--text-secondary)", fontSize: "1.1rem", lineHeight: "1.8", marginBottom: "30px" }}>
                   {service.description}
                 </p>

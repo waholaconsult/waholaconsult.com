@@ -10,12 +10,12 @@ interface ServiceCardProps {
 
 export default function ServiceCard({ title, description, icon, link }: ServiceCardProps) {
   return (
-    <div className={`glass-panel ${styles.card}`}>
+    <div className={styles.card}>
       <div className={styles.iconWrapper}>{icon}</div>
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
       <Link href={link} className={styles.link}>
-        Learn More <span className={styles.arrow}>→</span>
+        Learn More <span className={styles.arrow}>&rarr;</span>
       </Link>
     </div>
   );
