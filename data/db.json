@@ -1,0 +1,63 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "slug": "future-of-social-marketing-2026",
+      "title": "The Future of Social Marketing in 2026",
+      "excerpt": "Discover the emerging trends that will dominate social media algorithms and how your brand can stay ahead of the curve.",
+      "content": "Digital marketing is no longer just about running ads. It requires a holistic approach that connects your website, your social media presence, and your email marketing into a single, cohesive funnel.\n\n### The Rise of AI-Driven Campaigns\nAlgorithms are changing faster than ever. Standard static targeting is being replaced by AI models that target users based on real-time behavior. To succeed, brands must create high-quality organic content that drives native engagement, rather than relying solely on paid outreach.\n\n### Core Pillars for 2026\n1. **Personalization at Scale**: Target users based on user search intent and interactive feedback.\n2. **Community First**: Focus on direct communication channels like newsletters and niche platforms.\n3. **Content Velocity**: Maintain a steady stream of valuable articles, visual tools, and templates.\n\nWahola specializes in building these comprehensive systems for premium brands looking to scale their operations passively and aggressively.",
+      "date": "May 10, 2026",
+      "category": "Social Media",
+      "views": 25,
+      "reads": 12
+    },
+    {
+      "id": "2",
+      "slug": "youtube-automation-guide",
+      "title": "A Complete Guide to YouTube Automation",
+      "excerpt": "Learn how to build a passive income machine on YouTube without ever showing your face on camera.",
+      "content": "YouTube automation is one of the most powerful digital business models of the decade. By leveraging specialized teams for writing, editing, and voiceovers, creators can manage high-traffic channels and generate passive ad revenue.\n\n### How YouTube Automation Works\n1. **Niche Selection**: Choose high-CPM niches like finance, technology, or travel documentation.\n2. **Workflow Standardization**: Establish templates for scripts, audio editing, and thumbnail designs.\n3. **Analytics Optimization**: Track click-through rates (CTR) and average view duration (AVD) to continuously refine content.\n\nOur team at Wahola helps creators establish these automated systems from scratch, handles content production, and drives organic channel growth.",
+      "date": "May 05, 2026",
+      "category": "YouTube",
+      "views": 42,
+      "reads": 18
+    },
+    {
+      "id": "3",
+      "slug": "high-converting-web-design",
+      "title": "7 Elements of a High-Converting Website",
+      "excerpt": "Traffic means nothing if your website doesn't convert. Here are the core principles of premium website design.",
+      "content": "A beautiful website is useless if it doesn't generate leads or sales. High-converting websites focus on user psychology, fast loading speeds, and frictionless call-to-actions.\n\n### Key Conversion Elements\n- **Clear Value Proposition**: Visitors must understand what you do in the first 3 seconds.\n- **Premium Visual Aesthetics**: Use curated colors, custom graphics, and subtle micro-animations to build instant trust.\n- **Frictionless Forms**: Keep inputs to a minimum and guide the user through clear progressive steps.\n- **Optimized Mobile UX**: Over 60% of traffic is mobile, so fluid responsive designs are mandatory.\n- **Strong Call to Actions (CTAs)**: Make sure users know exactly what step to take next.\n\nAt Wahola, we combine world-class design with high-performance engineering to build websites that turn visits into customers.",
+      "date": "April 28, 2026",
+      "category": "Web Design",
+      "views": 31,
+      "reads": 15
+    },
+    {
+      "id": "4",
+      "slug": "test-title",
+      "title": "Test Title",
+      "category": "SEO",
+      "excerpt": "Test excerpt",
+      "content": "Test content",
+      "date": "June 6, 2026",
+      "views": 0,
+      "reads": 0
+    }
+  ],
+  "leads": [],
+  "subscribers": [],
+  "analytics": {
+    "views": {
+      "/": 157,
+      "/blog": 80,
+      "/services": 96,
+      "/contact": 49,
+      "/careers": 12,
+      "/sign-in": 8,
+      "/about": 1,
+      "/sign-in/sso-callback": 1,
+      "/admin": 1
+    }
+  }
+}

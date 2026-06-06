@@ -42,11 +42,10 @@ export default function Footer() {
             &copy; {new Date().getFullYear()}, by Wahola Consulting Group, LLC
           </div>
           <div className={styles.socials}>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter (X)</a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.youtube.com/@WaholaConsult" target="_blank" rel="noopener noreferrer">YouTube</a>
+            <a href="https://web.facebook.com/waholaconsult" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.linkedin.com/in/wahola-consult-4a578240a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.tiktok.com/@waho609" target="_blank" rel="noopener noreferrer">TikTok</a>
           </div>
         </div>
       </div>

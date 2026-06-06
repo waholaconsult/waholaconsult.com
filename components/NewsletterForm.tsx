@@ -7,14 +7,25 @@ export default function NewsletterForm() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("loading");
-    
-    setTimeout(() => {
-      setStatus("success");
-      setEmail("");
-    }, 1200);
+    try {
+      const res = await fetch("/api/subscribers", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email })
+      });
+
+      if (res.ok) {
+        setStatus("success");
+        setEmail("");
+      } else {
+        setStatus("error");
+      }
+    } catch (err) {
+      setStatus("error");
+    }
   };
 
   return (
@@ -44,6 +55,10 @@ export default function NewsletterForm() {
         
         {status === "success" && (
           <p className={styles.successMsg}>Thanks for subscribing! Check your inbox soon.</p>
+        )}
+        
+        {status === "error" && (
+          <p style={{ color: "red", marginTop: "12px", fontSize: "0.9rem", fontWeight: 600 }}>Something went wrong. Please try again.</p>
         )}
       </div>
     </div>

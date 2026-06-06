@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import ConditionalFooter from "@/components/ConditionalFooter";
+import AnalyticsTracker from "@/components/AnalyticsTracker";
+import { ClerkProvider } from '@clerk/nextjs'
 
 const figtree = Figtree({
   variable: "--font-figtree",
@@ -23,9 +25,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={figtree.variable}>
       <body className={figtree.className}>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <ClerkProvider>
+          <AnalyticsTracker />
+          <Navbar />
+          <main>{children}</main>
+          <ConditionalFooter />
+        </ClerkProvider>
       </body>
     </html>
   );
